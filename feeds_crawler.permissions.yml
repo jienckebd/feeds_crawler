@@ -1,0 +1,4 @@
+administer feeds_crawler:
+  title: 'Administer Feeds Crawler Settings'
+use feeds_crawler:
+  title: 'Use Feeds Crawler'

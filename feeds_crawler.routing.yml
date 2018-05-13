@@ -1,0 +1,35 @@
+feeds_crawler.settings:
+  path: '/admin/config/system/feeds-crawler'
+  defaults:
+    _form: 'Drupal\feeds_crawler\Form\FeedsCrawlerSettings'
+    _title: 'Feeds Crawler Settings'
+  requirements:
+    _permission: 'administer feeds_crawler'
+
+
+entity.feeds_crawler.context.add:
+  path: '/admin/structure/feeds_crawler/manage/{machine_name}/variant/{variant_machine_name}/contexts/add/{context_id}'
+  defaults:
+    _form: '\Drupal\feeds_crawler\Form\StaticContextConfigure'
+    _title: 'Add custom context'
+    tempstore_id: feeds_crawler.page
+  requirements:
+    _permission: 'administer pages'
+
+entity.feeds_crawler.context.edit:
+  path: '/admin/structure/feeds_crawler/manage/{machine_name}/variant/{variant_machine_name}/contexts/edit/{context_id}'
+  defaults:
+    _form: '\Drupal\feeds_crawler\Form\StaticContextConfigure'
+    _title: 'Edit context'
+    tempstore_id: feeds_crawler.page
+  requirements:
+    _permission: 'administer pages'
+
+entity.feeds_crawler.context.delete:
+  path: '/admin/structure/feeds_crawler/manage/{machine_name}/variant/{variant_machine_name}/context/delete/{context_id}'
+  defaults:
+    _form: '\Drupal\feeds_crawler\Form\StaticContextDeleteForm'
+    _title: 'Delete static context'
+    tempstore_id: feeds_crawler.page
+  requirements:
+    _permission: 'administer pages'

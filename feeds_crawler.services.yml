@@ -1,0 +1,7 @@
+services:
+  feeds_crawler.manager:
+    class: Drupal\feeds_crawler\FeedsCrawlerManager
+    arguments: ['@http_client_factory', '@entity_type.manager', '@entity_field.manager', '@config.factory', '@cache.default', '@current_user', '@logger.channel.feeds_crawler']
+  logger.channel.feeds_crawler:
+    parent: logger.channel_base
+    arguments: ['feeds_crawler']
