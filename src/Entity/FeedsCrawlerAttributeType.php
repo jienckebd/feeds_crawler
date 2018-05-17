@@ -19,7 +19,7 @@ use Drupal\feeds_crawler\FeedsCrawlerTypeInterface;
  *     },
  *     "list_builder" = "Drupal\feeds_crawler\ListBuilder\FeedsCrawlerTypeListBuilder",
  *     "route_provider" = {
- *       "html" = "Drupal\feeds_crawler\Routing\FeedsCrawlerTypeRouteProvider",
+ *       "html" = "Drupal\Core\Entity\Routing\AdminHtmlRouteProvider",
  *     },
  *   },
  *   admin_permission = "administer feeds_crawler",

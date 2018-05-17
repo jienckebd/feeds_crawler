@@ -33,6 +33,9 @@ use Drupal\feeds_crawler\FeedsCrawlerInterface;
  *     "inline_form" = "Drupal\feeds_crawler\Form\FeedsCrawlerInlineForm",
  *     "list_builder" = "Drupal\Core\Entity\EntityListBuilder",
  *     "translation" = "Drupal\content_translation\ContentTranslationHandler",
+ *     "route_provider" = {
+ *       "html" = "Drupal\Core\Entity\Routing\DefaultHtmlRouteProvider",
+ *     },
  *   },
  *   base_table = "feeds_crawler",
  *   data_table = "feeds_crawler_field_data",
